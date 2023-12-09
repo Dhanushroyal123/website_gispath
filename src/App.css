@@ -46,8 +46,7 @@ body {
 
 .mitem {
   display: inline-block;
-  padding: 40px 15px 40px 15px;
-  margin-left: 30px;
+  padding: 40px;
 }
 
 li {
