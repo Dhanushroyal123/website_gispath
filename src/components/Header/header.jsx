@@ -52,11 +52,11 @@ const Header = () => {
         </div>
         <div className='between'></div>
         <div className='menu'>
-          <ul>
+          <div className='ullist'>
             {hoverBorder.map((each) => {
               const { id, name, status } = each
               return (
-                <li
+                <div
                   id={id}
                   className='mitem'
                   onMouseEnter={() => onMouse(id)}
@@ -67,10 +67,10 @@ const Header = () => {
                   }}
                 >
                   {name.charAt(0).toUpperCase() + name.slice(1)}
-                </li>
+                </div>
               )
             })}
-          </ul>
+          </div>
         </div>
         <div className='hamburger-icon'>
           <Hamburger id='hg' toggled={isOpen} toggle={setOpen} />

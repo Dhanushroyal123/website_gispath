@@ -45,24 +45,18 @@ body {
 }
 
 .mitem {
-  display: inline-block;
-  padding: 40px;
-}
+  flex: 5;
 
-li {
-  font-weight: 600;
-  font-size: 16px;
-  color: #0d016b;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
-li:hover {
-  transform: 2s;
-  color: #a20fc2;
-}
-
-ul {
   display: flex;
+  justify-content: center;
+  padding: 40px 0px 40px 0px;
+}
+
+.ullist {
+  display: flex;
+  width: 750px;
+  height: 101px;
+  align-items: center;
 }
 .menublock {
   display: flex;
@@ -105,7 +99,7 @@ ul {
   color: #a20fc2;
 }
 @media only screen and (max-width: 480px) {
-  ul {
+  .ullist {
     display: none;
   }
 
@@ -133,7 +127,7 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
-  ul {
+  .ullist {
     display: none;
   }
 
